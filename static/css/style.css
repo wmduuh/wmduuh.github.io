@@ -1,0 +1,229 @@
+/* 1. VARIÁVEIS E BASE */
+:root {
+    --neon: #00d9ff;
+    --purple: #a855f7;
+    --dark: #0a0a0b;
+    --glass: rgba(18, 18, 18, 0.85);
+    --border: rgba(255, 255, 255, 0.1);
+    --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    background: var(--dark);
+    color: #e0e0e0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. NAVEGAÇÃO & AUTH */
+.navbar {
+    background: rgba(10, 10, 11, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.4rem;
+    z-index: 1001;
+}
+
+.nav-logo span { color: var(--neon); }
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-menu a:hover {
+    color: var(--neon);
+    text-shadow: 0 0 8px rgba(0, 217, 255, 0.4);
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    border-left: 1px solid var(--border);
+    min-width: fit-content;
+    white-space: nowrap;
+}
+
+.user-avatar-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--neon);
+    object-fit: cover;
+}
+
+.auth-btn-placeholder {
+    background: transparent;
+    border: none;
+    color: #ccc;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+    padding: 5px 10px;
+}
+
+.auth-btn-placeholder:hover { color: var(--neon); }
+
+/* 3. HEADER & PERFIL (HOME) */
+.hero-banner {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid var(--neon);
+}
+
+.header-content {
+    margin-top: -60px;
+    position: relative;
+    z-index: 10;
+}
+
+.glass {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px !important;
+}
+
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid var(--neon);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profile-img img { width: 100%; height: 100%; object-fit: cover; }
+
+/* 4. CARDS DE VÍDEOS/ARTIGOS (HOME) */
+.post-card {
+    transition: var(--transition);
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.02);
+    margin-bottom: 20px;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.1);
+}
+
+/* 5. FOOTER */
+.footer-minimal {
+    background: #050505;
+    border-top: 1px solid var(--border);
+    padding: 50px 0;
+    margin-top: 80px;
+}
+
+/* ==========================================================================
+   NOVO: AJUSTES PARA O LAYOUT DE POST (PROTEÇÃO CONTRA QUEBRAS)
+   ========================================================================== */
+.post-body-content {
+    padding: 20px 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.post-header-refined {
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+/* Efeito VIP de Ofuscação */
+.exclusive-content.locked {
+    filter: blur(12px);
+    opacity: 0.3;
+    user-select: none;
+    pointer-events: none;
+}
+
+.exclusive-content.unlocked {
+    filter: blur(0);
+    opacity: 1;
+}
+
+/* 6. RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .nav-wrapper {
+        display: none;
+        position: absolute;
+        top: 100%; left: 0; width: 100%;
+        background: rgba(10, 10, 11, 0.98);
+        padding: 30px;
+        flex-direction: column;
+    }
+    .nav-wrapper.active { display: flex; }
+    .profile-card { flex-direction: column; text-align: center; }
+}

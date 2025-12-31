@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Sobre Mim | wmduuh.github</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Sobre Mim" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Especialista &amp; Criador Tech" />
+<meta property="og:description" content="Especialista &amp; Criador Tech" />
+<link rel="canonical" href="https://wmduuh.github.io/sobre/" />
+<meta property="og:url" content="https://wmduuh.github.io/sobre/" />
+<meta property="og:site_name" content="wmduuh.github" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Sobre Mim" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Especialista &amp; Criador Tech","headline":"Sobre Mim","url":"https://wmduuh.github.io/sobre/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body>
+<nav class="navbar">
+<div class="container nav-container">
+<a href="/" class="nav-logo">wmduuh<span>.github.io</span></a>
+<button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+<i class="fas fa-bars"></i>
+</button>
+<div class="nav-wrapper" id="nav-wrapper">
+<ul class="nav-menu">
+<li><a href="/">Início</a></li>
+<li><a href="/tutorial/">Tutoriais</a></li>
+<li><a href="https://youtube.com/@wmduuh" target="_blank">Canal</a></li>
+<li><a href="/sobre/">Sobre</a></li>
+<li id="auth-status" class="nav-auth"></li>
+</ul>
+<div class="search-wrapper">
+<i class="fas fa-search"></i>
+<input type="text" id="search-input" placeholder="Buscar...">
+</div>
+</div>
+</div>
+</nav>
+<div id="auth-modal" class="auth-modal" style="display:none;">
+<div class="glass auth-content">
+<button onclick="closeAuthModal()" class="close-btn">&times;</button>
+<h3 style="margin-bottom: 20px;">Acesse a Plataforma</h3>
+<button onclick="loginGoogle()" class="btn-google">
+<i class="fab fa-google"></i> Continuar com Google
+</button>
+<div class="divider"><span>ou</span></div>
+<input type="email" id="auth-email" placeholder="E-mail" class="auth-input">
+<input type="password" id="auth-password" placeholder="Senha" class="auth-input">
+<p id="auth-error" style="color: #ff4444; font-size: 0.75rem; min-height: 18px; margin: 5px 0;"></p>
+<div class="auth-actions">
+<button onclick="loginManual()" class="btn-primary">Entrar</button>
+<button onclick="createAccount()" class="btn-outline">Criar Conta</button>
+</div>
+</div>
+</div>
+
+<div class="hero-banner-compact"></div>
+
+<main class="container main-wrapper">
+<article class="post-container">
+    <header class="post-header" style="text-align: center; margin-bottom: 40px;">
+        <h1 style="font-size: 2.5rem;">José Eduardo</h1>
+        <p class="badge">Especialista &amp; Criador Tech</p>
+    </header>
+
+    <div class="post-content">
+        <section class="about-section">
+            <h3 style="color: var(--neon);">🚀 Quem sou eu</h3>
+            <p>
+                Sou Analista de Infraestrutura com sólida experiência em <strong>Sustentação e Confiabilidade de Sistemas</strong>. 
+                Minha paixão é transformar ambientes de TI complexos em operações fluidas, seguras e automatizadas.
+            </p>
+            <p>
+                Além da atuação técnica, sou <strong>Criador de Conteúdo Tech</strong>. Acredito que o conhecimento 
+                só tem valor quando compartilhado, por isso mantenho este blog e um canal no YouTube voltados 
+                para tutoriais práticos de Cloud, sistemas e produtividade técnica.
+            </p>
+        </section>
+
+        <section class="skills-section" style="margin-top: 40px;">
+            <h3 style="color: var(--neon);">🛠️ Especialidades Técnicas</h3>
+            <div class="skills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+                <div class="glass" style="padding: 15px; border-radius: 10px;">
+                    <strong>Infraestrutura</strong>
+                    <ul style="font-size: 0.9rem; margin-top: 10px;">
+                        <li>Sustentação de Sistemas</li>
+                        <li>Confiabilidade (SRE)</li>
+                        <li>Servidores Windows/Linux</li>
+                    </ul>
+                </div>
+                <div class="glass" style="padding: 15px; border-radius: 10px;">
+                    <strong>Cloud &amp; Dev</strong>
+                    <ul style="font-size: 0.9rem; margin-top: 10px;">
+                        <li>Cloud Computing</li>
+                        <li>Automação de Processos</li>
+                        <li>Documentação Técnica</li>
+                    </ul>
+                </div>
+                <div class="glass" style="padding: 15px; border-radius: 10px;">
+                    <strong>Conteúdo</strong>
+                    <ul style="font-size: 0.9rem; margin-top: 10px;">
+                        <li>Produção de Vídeo Tech</li>
+                        <li>Escrita Técnica</li>
+                        <li>Didática de Sistemas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" style="margin-top: 40px; text-align: center;">
+            <h3 style="color: var(--neon);">🤝 Vamos Conectar?</h3>
+            <p>Estou sempre aberto a trocar ideias sobre infraestrutura, novas tecnologias e criação de conteúdo.</p>
+            <div class="footer-socials" style="justify-content: center; margin-top: 20px;">
+                <a href="https://linkedin.com/in/wmduuh" target="_blank" style="font-size: 2rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="https://youtube.com/@wmduuh" target="_blank" style="font-size: 2rem;"><i class="fab fa-youtube"></i></a>
+            </div>
+        </section>
+    </div>
+</article>
+
+</main>
+<footer class="footer-minimal">
+<div class="container footer-content">
+<div class="footer-brand">
+<h3>wmduuh<span>.github.io</span></h3>
+<p>Especialista em Sistemas, Automação & IA</p>
+<div class="footer-socials">
+<a href="https://linkedin.com/in/wmduuh" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://youtube.com/@wmduuh" target="_blank"><i class="fab fa-youtube"></i></a>
+<a href="https://github.com/wmduuh" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+</div>
+<div class="footer-info">
+<p>&copy; 2025 • Todos os direitos reservados</p>
+</div>
+</div>
+</footer>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import {
+getAuth, GoogleAuthProvider, signInWithPopup, signOut,
+onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+const firebaseConfig = {
+apiKey: "AIzaSyCN5d0GMVf8zIYkYzlbD4Vt6Z7-NNn5-FA",
+authDomain: "wmduuh-github.firebaseapp.com",
+projectId: "wmduuh-github",
+storageBucket: "wmduuh-github.firebasestorage.app",
+messagingSenderId: "240954737432",
+appId: "1:240954737432:web:ed5f344eba9ae1085cd46d"
+};
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+// --- FUNÇÕES DE UI (Expostas globalmente) ---
+window.openAuthModal = () => document.getElementById('auth-modal').style.display = 'flex';
+window.closeAuthModal = () => document.getElementById('auth-modal').style.display = 'none';
+// --- LÓGICA DE LOGIN ---
+window.loginGoogle = () => {
+signInWithPopup(auth, provider)
+.then(() => closeAuthModal())
+.catch(err => console.error(err));
+};
+window.createAccount = () => {
+const email = document.getElementById('auth-email').value;
+const pass = document.getElementById('auth-password').value;
+createUserWithEmailAndPassword(auth, email, pass)
+.then(() => closeAuthModal())
+.catch(err => document.getElementById('auth-error').innerText = "Erro ao criar: Senha curta ou e-mail inválido.");
+};
+window.loginManual = () => {
+const email = document.getElementById('auth-email').value;
+const pass = document.getElementById('auth-password').value;
+signInWithEmailAndPassword(auth, email, pass)
+.then(() => closeAuthModal())
+.catch(err => document.getElementById('auth-error').innerText = "E-mail ou senha incorretos.");
+};
+window.logout = () => {
+signOut(auth).then(() => location.reload());
+};
+// --- MONITOR DE ESTADO ---
+onAuthStateChanged(auth, (user) => {
+const authContainer = document.getElementById('auth-status');
+if (user) {
+const name = user.displayName ? user.displayName.split(' ')[0] : user.email.split('@')[0];
+const photo = user.photoURL || 'https://www.gravatar.com/avatar/000?d=mp';
+authContainer.innerHTML = `
+<div class="user-avatar-group">
+<img src="${photo}" class="user-img" alt="User">
+<span style="font-size: 0.85rem; font-weight: 600;">${name}</span>
+<a href="javascript:void(0)" onclick="logout()" style="margin-left:8px; color:#ff4444; font-size:0.7rem;">(Sair)</a>
+</div>
+`;
+document.body.classList.add('is-logged-in');
+} else {
+authContainer.innerHTML = `
+<button onclick="openAuthModal()" class="auth-btn-placeholder">
+<i class="fas fa-user-circle"></i> LOGIN
+</button>
+`;
+document.body.classList.remove('is-logged-in');
+}
+});
+// --- UI GERAL ---
+document.getElementById('menu-toggle').addEventListener('click', () => {
+document.getElementById('nav-wrapper').classList.toggle('active');
+});
+document.getElementById('search-input').addEventListener('keyup', function() {
+let filter = this.value.toUpperCase();
+document.querySelectorAll('.post-card').forEach(post => {
+let title = post.querySelector('h3').innerText;
+post.style.display = title.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+});
+});
+</script>
+</body>
+</html>
