@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/static/css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<!-- Begin Jekyll SEO tag v2.8.0 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Home | wmduuh.github</title>
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Home" />
@@ -24,66 +24,58 @@
 
 </head>
 <body>
-<nav class="navbar">
-<div class="container nav-container">
-<a href="/" class="nav-logo">wmduuh<span>.github.io</span></a>
-<button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
-<i class="fas fa-bars"></i>
-</button>
-<div class="nav-wrapper" id="nav-wrapper">
-<ul class="nav-menu">
-<li><a href="/">Início</a></li>
-<li><a href="/tutorial/">Tutoriais</a></li>
-<li><a href="https://youtube.com/@wmduuh" target="_blank">Canal</a></li>
-<li><a href="/sobre/">Sobre</a></li>
-<li id="auth-status" class="nav-auth"></li>
-</ul>
-<div class="search-wrapper">
-<i class="fas fa-search"></i>
-<input type="text" id="search-input" placeholder="Buscar...">
-</div>
-</div>
-</div>
-</nav>
-<div id="auth-modal" class="auth-modal" style="display:none;">
-<div class="glass auth-content">
-<button onclick="closeAuthModal()" class="close-btn">&times;</button>
-<h3 style="margin-bottom: 20px;">Acesse a Plataforma</h3>
-<button onclick="loginGoogle()" class="btn-google">
-<i class="fab fa-google"></i> Continuar com Google
-</button>
-<div class="divider"><span>ou</span></div>
-<input type="email" id="auth-email" placeholder="E-mail" class="auth-input">
-<input type="password" id="auth-password" placeholder="Senha" class="auth-input">
-<p id="auth-error" style="color: #ff4444; font-size: 0.75rem; min-height: 18px; margin: 5px 0;"></p>
-<div class="auth-actions">
-<button onclick="loginManual()" class="btn-primary">Entrar</button>
-<button onclick="createAccount()" class="btn-outline">Criar Conta</button>
-</div>
-</div>
-</div>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="nav-logo">wmduuh<span>.github.io</span></a>
 
-<header class="main-header">
-<div class="hero-banner" style="background-image: url('/assets/img/banner.jpg');"></div>
-<div class="container header-content">
-<div class="profile-card glass">
-<div class="profile-img">
-<img src="/assets/img/perfil.png" alt="José Eduardo">
-</div>
-<div class="profile-info">
-<h1>José Eduardo</h1>
-<span class="badge">Especialista & Criador Tech</span>
-<p style="margin-top: 12px; color: #bbb; font-size: 0.95rem; max-width: 500px;">
-Analista de Infraestrutura focado em Cloud e Automação.
-Compartilhando conhecimento técnico através de artigos e tutoriais práticos.
-</p>
-</div>
-</div>
-</div>
-</header>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
 
-<main class="container main-wrapper">
-<section class="container" style="margin-top: -20px; margin-bottom: 60px;">
+            <div class="nav-wrapper" id="nav-wrapper">
+                <ul class="nav-menu">
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/tutorial/">Tutoriais</a></li>
+                    <li><a href="https://youtube.com/@wmduuh" target="_blank">Canal</a></li>
+                    <li><a href="/sobre/">Sobre</a></li>
+                    <li id="auth-status" class="nav-auth">
+                        <button onclick="loginGoogle()" class="auth-btn-placeholder">
+                        <i class="fas fa-user-circle"></i> LOGIN
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="search-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <header class="main-header">
+        <div class="hero-banner" style="background-image: url('/assets/img/banner.jpg');"></div>
+        <div class="container header-content">
+            <div class="profile-card glass">
+                <div class="profile-img">
+                    <img src="/assets/img/perfil.png" alt="José Eduardo">
+                </div>
+                <div class="profile-info">
+                    <h1>José Eduardo</h1>
+                    <span class="badge">Especialista & Criador Tech</span>
+                    <p style="margin-top: 12px; color: #bbb; font-size: 0.95rem; max-width: 500px;">
+                        Analista de Infraestrutura focado em Cloud e Automação. 
+                        Compartilhando conhecimento técnico através de artigos e tutoriais práticos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <main class="container main-wrapper">
+        <section class="container" style="margin-top: -20px; margin-bottom: 60px;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
         <div class="glass" style="text-align: center; padding: 30px; border-bottom: 2px solid #ff0000;">
             <i class="fab fa-youtube" style="color: #ff0000; font-size: 2.5rem; margin-bottom: 15px;"></i>
@@ -118,8 +110,8 @@ Compartilhando conhecimento técnico através de artigos e tutoriais práticos.
                 
                 <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
                     
-                        <span class="badge" style="background: rgba(168, 85, 247, 0.15); color: #a855f7; border: 1px solid rgba(168, 85, 247, 0.3);">
-                            <i class="fas fa-pen-nib" style="font-size: 0.7rem; margin-right: 5px;"></i> ARTIGO
+                        <span class="badge" style="background: rgba(0, 217, 255, 0.15); color: var(--neon); border: 1px solid rgba(0, 217, 255, 0.3);">
+                            <i class="fas fa-book-reader" style="font-size: 0.7rem; margin-right: 5px;"></i> TUTORIAL
                         </span>
                     
                     
@@ -129,13 +121,13 @@ Compartilhando conhecimento técnico através de artigos e tutoriais práticos.
                 <h3 style="margin: 0 0 15px 0; font-size: 1.3rem; color: #fff;">Microsoft PC Manager: O guia definitivo</h3>
                 
                 <p style="font-size: 0.95rem; color: #ccc; flex-grow: 1; margin-bottom: 20px;">
-                    O Microsoft PC Manager é excelente para otimizar o sistema…
-
+                    Neste artigo, detalho os comandos e configurações que mostrei no vídeo do canal.
+…
 
                 </p>
                 
                 <a href="/tutorial/microsoft-pc-manager/" class="btn-back" style="margin-bottom: 0; font-size: 0.9rem;">
-                     Ler Artigo 
+                     Iniciar Tutorial 
                     <i class="fas fa-arrow-right" style="font-size: 0.8rem; margin-left: 5px;"></i>
                 </a>
             </div>
@@ -144,100 +136,91 @@ Compartilhando conhecimento técnico através de artigos e tutoriais práticos.
     </div>
 </section>
 
-</main>
-<footer class="footer-minimal">
-<div class="container footer-content">
-<div class="footer-brand">
-<h3>wmduuh<span>.github.io</span></h3>
-<p>Especialista em Sistemas, Automação & IA</p>
-<div class="footer-socials">
-<a href="https://linkedin.com/in/wmduuh" target="_blank"><i class="fab fa-linkedin"></i></a>
-<a href="https://youtube.com/@wmduuh" target="_blank"><i class="fab fa-youtube"></i></a>
-<a href="https://github.com/wmduuh" target="_blank"><i class="fab fa-github"></i></a>
-</div>
-</div>
-<div class="footer-info">
-<p>&copy; 2025 • Todos os direitos reservados</p>
-</div>
-</div>
-</footer>
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-import {
-getAuth, GoogleAuthProvider, signInWithPopup, signOut,
-onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword
-} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-const firebaseConfig = {
-apiKey: "AIzaSyCN5d0GMVf8zIYkYzlbD4Vt6Z7-NNn5-FA",
-authDomain: "wmduuh-github.firebaseapp.com",
-projectId: "wmduuh-github",
-storageBucket: "wmduuh-github.firebasestorage.app",
-messagingSenderId: "240954737432",
-appId: "1:240954737432:web:ed5f344eba9ae1085cd46d"
-};
-const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const provider = new GoogleAuthProvider();
-// --- FUNÇÕES DE UI (Expostas globalmente) ---
-window.openAuthModal = () => document.getElementById('auth-modal').style.display = 'flex';
-window.closeAuthModal = () => document.getElementById('auth-modal').style.display = 'none';
-// --- LÓGICA DE LOGIN ---
-window.loginGoogle = () => {
-signInWithPopup(auth, provider)
-.then(() => closeAuthModal())
-.catch(err => console.error(err));
-};
-window.createAccount = () => {
-const email = document.getElementById('auth-email').value;
-const pass = document.getElementById('auth-password').value;
-createUserWithEmailAndPassword(auth, email, pass)
-.then(() => closeAuthModal())
-.catch(err => document.getElementById('auth-error').innerText = "Erro ao criar: Senha curta ou e-mail inválido.");
-};
-window.loginManual = () => {
-const email = document.getElementById('auth-email').value;
-const pass = document.getElementById('auth-password').value;
-signInWithEmailAndPassword(auth, email, pass)
-.then(() => closeAuthModal())
-.catch(err => document.getElementById('auth-error').innerText = "E-mail ou senha incorretos.");
-};
-window.logout = () => {
-signOut(auth).then(() => location.reload());
-};
-// --- MONITOR DE ESTADO ---
-onAuthStateChanged(auth, (user) => {
-const authContainer = document.getElementById('auth-status');
-if (user) {
-const name = user.displayName ? user.displayName.split(' ')[0] : user.email.split('@')[0];
-const photo = user.photoURL || 'https://www.gravatar.com/avatar/000?d=mp';
-authContainer.innerHTML = `
-<div class="user-avatar-group">
-<img src="${photo}" class="user-img" alt="User">
-<span style="font-size: 0.85rem; font-weight: 600;">${name}</span>
-<a href="javascript:void(0)" onclick="logout()" style="margin-left:8px; color:#ff4444; font-size:0.7rem;">(Sair)</a>
-</div>
-`;
-document.body.classList.add('is-logged-in');
-} else {
-authContainer.innerHTML = `
-<button onclick="openAuthModal()" class="auth-btn-placeholder">
-<i class="fas fa-user-circle"></i> LOGIN
-</button>
-`;
-document.body.classList.remove('is-logged-in');
-}
-});
-// --- UI GERAL ---
-document.getElementById('menu-toggle').addEventListener('click', () => {
-document.getElementById('nav-wrapper').classList.toggle('active');
-});
-document.getElementById('search-input').addEventListener('keyup', function() {
-let filter = this.value.toUpperCase();
-document.querySelectorAll('.post-card').forEach(post => {
-let title = post.querySelector('h3').innerText;
-post.style.display = title.toUpperCase().indexOf(filter) > -1 ? "" : "none";
-});
-});
+    </main>
+
+    <footer class="footer-minimal">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>wmduuh<span>.github.io</span></h3>
+                <p>Especialista em Sistemas, Automação & IA</p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/wmduuh" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://youtube.com/@wmduuh" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/wmduuh" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-info">
+                <p>&copy; 2025 • Todos os direitos reservados</p>
+                <p style="font-size: 0.75rem; color: #555;">Construído com Jekyll e Tecnologia Cloud</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica do Menu Hambúrguer
+        const menuToggle = document.getElementById('menu-toggle');
+        const navWrapper = document.getElementById('nav-wrapper');
+
+        menuToggle.addEventListener('click', () => {
+            navWrapper.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Lógica de Busca
+        document.getElementById('search-input').addEventListener('keyup', function() {
+            let filter = this.value.toUpperCase();
+            let posts = document.querySelectorAll('.post-card');
+            posts.forEach(post => {
+                let title = post.querySelector('h3').innerText;
+                post.style.display = title.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+            });
+        });
+    </script>
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCN5d0GMVf8zIYkYzlbD4Vt6Z7-NNn5-FA",
+    authDomain: "wmduuh-github.firebaseapp.com",
+    projectId: "wmduuh-github",
+    storageBucket: "wmduuh-github.firebasestorage.app",
+    messagingSenderId: "240954737432",
+    appId: "1:240954737432:web:ed5f344eba9ae1085cd46d"
+  };
+
+  // Inicialização
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+
+  // Função para Login
+  window.loginGoogle = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => console.log("Usuário logado:", result.user.displayName))
+      .catch((error) => console.error("Erro no login:", error));
+  };
+
+  // Função para Logout
+  window.logout = () => {
+    signOut(auth).then(() => location.reload());
+  };
+
+  // Observador de Estado (Monitora se o usuário está logado ou não)
+  onAuthStateChanged(auth, (user) => {
+    const loginBtn = document.getElementById('auth-status');
+    if (user) {
+      // Se logado, mostra o nome e opção de sair
+      loginBtn.innerHTML = `<span style="font-size:0.8rem; color:var(--neon); margin-right:10px;">Olá, ${user.displayName.split(' ')[0]}</span> 
+                            <a href="#" onclick="logout()" style="color:#ff4444; font-size:0.8rem;">Sair</a>`;
+    } else {
+      // Se não logado, mostra botão de login
+      loginBtn.innerHTML = `<a href="#" onclick="loginGoogle()" class="badge" style="cursor:pointer; background:rgba(0,217,255,0.1);">Login</a>`;
+    }
+  });
 </script>
 </body>
 </html>

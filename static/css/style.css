@@ -11,46 +11,46 @@
 * { box-sizing: border-box; }
 
 html, body {
-    overflow-x: hidden;
+    overflow-x: hidden; 
     width: 100%;
 }
 
-body {
-    background: var(--dark);
-    color: #e0e0e0;
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    margin: 0;
+body { 
+    background: var(--dark); 
+    color: #e0e0e0; 
+    font-family: 'Segoe UI', system-ui, sans-serif; 
+    margin: 0; 
     line-height: 1.6;
 }
 
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
+.container { 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
-/* 2. NAVEGAÇÃO & AUTH */
-.navbar {
-    background: rgba(10, 10, 11, 0.95);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid var(--border);
-    padding: 12px 0;
+/* 2. NAVEGAÇÃO */
+.navbar { 
+    background: rgba(10, 10, 11, 0.95); 
+    backdrop-filter: blur(10px); 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    border-bottom: 1px solid var(--border); 
+    padding: 12px 0; 
 }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.nav-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 
-.nav-logo {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 1.4rem;
+.nav-logo { 
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: 800; 
+    font-size: 1.4rem; 
     z-index: 1001;
 }
 
@@ -59,7 +59,7 @@ body {
 .nav-wrapper {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 .nav-menu {
@@ -83,92 +83,112 @@ body {
     text-shadow: 0 0 8px rgba(0, 217, 255, 0.4);
 }
 
-.nav-auth {
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    border-left: 1px solid var(--border);
-    min-width: fit-content;
-    white-space: nowrap;
-}
-
-.user-avatar-group {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.user-img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 2px solid var(--neon);
-    object-fit: cover;
-}
-
-.auth-btn-placeholder {
+.menu-toggle {
+    display: none;
     background: transparent;
     border: none;
-    color: #ccc;
-    font-weight: 600;
+    color: var(--neon);
+    font-size: 1.5rem;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: var(--transition);
-    padding: 5px 10px;
+    z-index: 1001;
 }
 
-.auth-btn-placeholder:hover { color: var(--neon); }
-
-/* 3. HEADER & PERFIL (HOME) */
-.hero-banner {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    border-bottom: 2px solid var(--neon);
+.search-wrapper { 
+    background: #1a1a1c; 
+    border: 1px solid var(--border); 
+    border-radius: 8px; 
+    padding: 6px 12px; 
+    display: flex; 
+    align-items: center; 
 }
 
-.header-content {
-    margin-top: -60px;
-    position: relative;
-    z-index: 10;
+.search-wrapper input { 
+    background: transparent; 
+    border: none; 
+    color: #fff; 
+    padding-left: 10px; 
+    outline: none; 
+    font-size: 0.9rem;
+    width: 150px;
 }
 
-.glass {
-    background: var(--glass);
-    backdrop-filter: blur(15px);
-    border: 1px solid var(--border);
-    border-radius: 15px;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+.profile-info .badge { 
+    background: rgba(0, 217, 255, 0.2); /* Fundo azul translúcido */
+    color: var(--neon); 
+    padding: 6px 15px; 
+    border-radius: 50px; 
+    font-size: 0.85rem; 
+    font-weight: 700; 
+    display: inline-block;
+    border: 1px solid rgba(0, 217, 255, 0.3); /* Borda fina para definição */
+    margin-top: 5px;
+    text-transform: none; /* Mantém "Especialista & Criador Tech" original */
 }
 
-.profile-card {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+/* 3. HEADER & PERFIL */
+.hero-banner { 
+    height: 200px; 
+    background-size: cover; 
+    background-position: center; 
+    border-bottom: 2px solid var(--neon); 
+}
+
+.hero-banner-compact {
+    height: 80px;
+    background: linear-gradient(90deg, var(--dark) 0%, #1a1a1c 100%);
+    border-bottom: 1px solid var(--border);
+}
+
+.header-content { 
+    margin-top: -60px; 
+    position: relative; 
+    z-index: 10; 
+}
+
+.glass { 
+    background: var(--glass); 
+    backdrop-filter: blur(15px); 
+    border: 1px solid var(--border); 
+    border-radius: 15px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5); 
+}
+
+.profile-card { 
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
     padding: 40px !important;
 }
 
-.profile-img {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    border: 3px solid var(--neon);
-    overflow: hidden;
+.profile-img { 
+    width: 110px; 
+    height: 110px; 
+    border-radius: 50%; 
+    border: 3px solid var(--neon); 
+    overflow: hidden; 
     flex-shrink: 0;
 }
 
 .profile-img img { width: 100%; height: 100%; object-fit: cover; }
 
-/* 4. CARDS DE VÍDEOS/ARTIGOS (HOME) */
+.badge { 
+    padding: 4px 12px; 
+    border-radius: 50px; 
+    font-size: 0.75rem; 
+    font-weight: bold; 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* 4. CONTEÚDO & CARDS */
+.main-wrapper { 
+    margin-top: 40px; 
+    padding-bottom: 60px; 
+}
+
 .post-card {
     transition: var(--transition);
     border: 1px solid var(--border);
-    padding: 20px;
-    border-radius: 12px;
-    background: rgba(255,255,255,0.02);
-    margin-bottom: 20px;
 }
 
 .post-card:hover {
@@ -177,7 +197,19 @@ body {
     box-shadow: 0 10px 30px rgba(0, 217, 255, 0.1);
 }
 
-/* 5. FOOTER */
+.btn-back { 
+    color: var(--neon); 
+    text-decoration: none; 
+    font-weight: bold; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    transition: var(--transition); 
+}
+
+.btn-back:hover { color: #fff; }
+
+/* 5. FOOTER MINIMALISTA */
 .footer-minimal {
     background: #050505;
     border-top: 1px solid var(--border);
@@ -185,45 +217,84 @@ body {
     margin-top: 80px;
 }
 
-/* ==========================================================================
-   NOVO: AJUSTES PARA O LAYOUT DE POST (PROTEÇÃO CONTRA QUEBRAS)
-   ========================================================================== */
-.post-body-content {
-    padding: 20px 0;
-    font-size: 1.1rem;
-    line-height: 1.8;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.post-header-refined {
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 30px;
-    padding-bottom: 20px;
+.footer-brand h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
-/* Efeito VIP de Ofuscação */
-.exclusive-content.locked {
-    filter: blur(12px);
-    opacity: 0.3;
-    user-select: none;
-    pointer-events: none;
+.footer-brand h3 span { color: var(--neon); }
+
+.footer-brand p {
+    margin: 5px 0 15px;
+    font-size: 0.9rem;
+    color: #888;
 }
 
-.exclusive-content.unlocked {
-    filter: blur(0);
+.footer-socials {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-socials a {
+    color: #fff;
+    font-size: 1.3rem;
+    transition: var(--transition);
+    opacity: 0.7;
+}
+
+.footer-socials a:hover {
+    color: var(--neon);
     opacity: 1;
+    transform: translateY(-3px);
+}
+
+.footer-info { text-align: right; }
+
+.footer-info p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
 }
 
 /* 6. RESPONSIVIDADE */
 @media (max-width: 768px) {
     .menu-toggle { display: block; }
+
     .nav-wrapper {
-        display: none;
+        display: none; 
         position: absolute;
         top: 100%; left: 0; width: 100%;
         background: rgba(10, 10, 11, 0.98);
+        border-bottom: 1px solid var(--border);
         padding: 30px;
         flex-direction: column;
+        backdrop-filter: blur(15px);
     }
+
     .nav-wrapper.active { display: flex; }
-    .profile-card { flex-direction: column; text-align: center; }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-info { text-align: center; width: 100%; }
+}
+
+@media (max-width: 480px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px !important;
+    }
+    .header-content { margin-top: -40px; }
+    .profile-info h1 { font-size: 1.8rem; }
 }
